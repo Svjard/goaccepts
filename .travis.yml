@@ -1,11 +1,8 @@
 sudo: false
-
 language: go
-
 os:
   - linux
   - osx
-
 go:
   - 1.13.x
   - 1.12.x
@@ -17,10 +14,13 @@ git:
 env:
   - GO111MODULE=on
 
-install: true
+before_install:
+  - go get -t -v ./...
 
 script:
-  - make test-verbose
+  - ./go.test.sh
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t da790e26-a82f-4aa6-bb80-4f24baa44cf5
+  - bash <(curl -s https://codecov.io/bash)
+
+  // CODECOV_TOKEN="6f472283-e06d-411b-a5a0-fd3475b9556c"
