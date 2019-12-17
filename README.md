@@ -21,10 +21,10 @@ goaccepts.Languages(res.headers["Accept-Language"])
 
 Each header type is seperated into its own file and parser.
 
-`Accept`          - media-type.go . 
-`Accept-Encoding` - encoding.go . 
-`Accept-Charset`  - charset.go . 
-`Accept-Language` - language.go . 
+Accept          - media-type.go  
+Accept-Encoding - encoding.go  
+Accept-Charset  - charset.go  
+Accept-Language - language.go   
   
 RFC Reference: https://tools.ietf.org/html/rfc2616 . 
   
