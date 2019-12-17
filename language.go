@@ -33,10 +33,9 @@ type LanguagePriority struct {
 	s int
 }
 
-var simpleLanguageRegExp = "^\\s*([^\\s\\-;]+)(?:-([^\\s;]+))?\\s*(?:;(.*))?$"
-
 /**
  * Parse the Accept-Language header.
+ * https://tools.ietf.org/html/rfc3282
  */
 func parseAcceptLanguage(accept string) []LanguageResult {
 	res := []LanguageResult{}
