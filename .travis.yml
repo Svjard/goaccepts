@@ -1,0 +1,26 @@
+sudo: false
+
+language: go
+
+os:
+  - linux
+  - osx
+
+go:
+  - 1.13.x
+  - 1.12.x
+
+# Only clone the most recent commit.
+git:
+  depth: 1
+
+env:
+  - GO111MODULE=on
+
+install: true
+
+script:
+  - make test-verbose
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t da790e26-a82f-4aa6-bb80-4f24baa44cf5

@@ -1,0 +1,10 @@
+.vscode
+/debug
+/vendor
+/var
+/coverprofile
+/**/coverage.txt
+.DS_Store
+/tests/var/log
+/tests/etc/
+Dockerfile
