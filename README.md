@@ -29,7 +29,7 @@ Accept-Language - language.go
   
 RFC Reference: https://tools.ietf.org/html/rfc2616 
   
-Each module returns has two specific functions, the first returns a raw string array representation of the accepted entities in order of weight. The second returns an array of structures which provides a specific breakdown and detail about each parsed entity.  
+Each module has two specific functions, the first returns a raw string array representation of the accepted entities in order of weight. The second returns an array of structures which provides a specific breakdown and detail about each parsed entity.  
   
 ## Testing
 
